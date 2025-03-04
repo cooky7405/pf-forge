@@ -1,5 +1,4 @@
 import Navigation1 from "@/components/navigation1";
-import Service from "@/components/service";
 
 // app/page.tsx
 export default function Home() {
@@ -46,7 +45,8 @@ export default function Home() {
           id="services"
           className="min-h-screen border-b border-gray-300 py-8"
         >
-          <Service />
+          <h1 className="text-2xl font-bold mb-4">Services</h1>
+          <p>여기는 Services 섹션입니다.</p>
         </section>
 
         <section id="contact" className="min-h-screen py-8">

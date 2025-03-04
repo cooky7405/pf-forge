@@ -13,10 +13,10 @@ const categories = [
   {
     name: "서비스 소개",
     subcategories: [
-      { name: "앱개발", link: "service-app/" },
-      { name: "웹페이지 개발", link: "#" },
-      { name: "PC 전용 프로그램 개발", link: "#" },
-      { name: "서비스 관리 및 유지 보수", link: "#" },
+      { name: "앱개발", link: "/service/#app" },
+      { name: "웹페이지 개발", link: "/service/#web" },
+      { name: "PC 전용 프로그램 개발", link: "/service/#pc" },
+      { name: "서비스 관리 및 유지 보수", link: "/service/#info" },
     ],
   },
 ];

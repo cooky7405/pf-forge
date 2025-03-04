@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -17,6 +18,16 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase }) {
+      addBase({
+        ":root": {
+          "--primary-color": "#3490dc",
+          "--secondary-color": "#ffed4a",
+        },
+      });
+    }),
+  ],
 };
+
 export default config;

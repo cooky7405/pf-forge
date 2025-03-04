@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { app_sections } from "@/lib/constants";
+import { pc_sections } from "@/lib/constants";
 
 export default function ServiceApp() {
   return (
@@ -9,18 +9,18 @@ export default function ServiceApp() {
       {/* 공통 컨테이너 (1200px 제한 + 왼쪽 정렬) */}
       <div className="">
         {/* 앱개발 텍스트 */}
-        <div className="text-3xl py-6 font-bold">앱개발</div>
+        <div className="text-3xl py-6 font-bold">PC / 전용프로그램 개발발</div>
 
         {/* 섹션 컨텐츠 */}
         <div className="flex flex-col gap-6">
-          {app_sections.map((section, index) => (
+          {pc_sections.map((section, index) => (
             <div key={index} className="flex flex-col">
               {/* 아이콘과 제목을 가로로 정렬, 바닥(y축) 맞춤 */}
               <div className="flex items-end space-x-4">
                 {/* 아이콘 */}
                 <Image
                   src={section.image}
-                  alt={section.title[0]}
+                  alt={section.titles[0]}
                   width={100}
                   height={40}
                   className="h-auto"
@@ -28,7 +28,7 @@ export default function ServiceApp() {
 
                 {/* 제목 리스트 */}
                 <div className="flex flex-col">
-                  {section.title.map((title, titleIndex) => (
+                  {section.titles.map((title, titleIndex) => (
                     <h2 key={titleIndex} className="text-lg font-semibold">
                       {title}
                     </h2>
