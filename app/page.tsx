@@ -4,12 +4,12 @@ import Service from "@/components/service";
 // app/page.tsx
 export default function Home() {
   return (
-    <>
-      {/* 왼쪽 네비게이션 영역 */}
+    <div className="flex">
+      {/* 네비게이션 (반응형) */}
       <Navigation1 />
 
       {/* 오른쪽 메인(섹션) 영역 */}
-      <div className="ml-64 p-6">
+      <div className="flex-1 lg:ml-64 p-6">
         <section
           id="home"
           className="min-h-screen border-b border-gray-300 py-8"
@@ -54,6 +54,6 @@ export default function Home() {
           <p>여기는 Contact 섹션입니다.</p>
         </section>
       </div>
-    </>
+    </div>
   );
 }
